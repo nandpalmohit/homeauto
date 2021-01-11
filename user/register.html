@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Auto - Smart Home Device</title>
+	<!-- meta tag -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Smart Home Automation System" name="description">
+  	<meta content="Home Auto, Home Automation, Smart Home, SwitchKit" name="keywords">
+  	<!-- Favicons -->
+  	<link href="assets/logo.png" rel="icon">
+  	<!-- vendor css -->
+	<link href="/assets/vendor/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/vendor/css/style.css">
+  	<!-- google fonts -->
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  	<!-- fontaweomse js -->
+  	<!-- <script src="https://use.fontawesome.com/e8860b3adb.js"></script> -->
+  	<script src="https://kit.fontawesome.com/6ce04209ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="hero inner" id="header">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid" id="Navbar">
+				<a href="/" class="navbar-brand" title="">HomeAuto</a>
+				<ul class="nav justify-content-end" id="collapse-nav">
+  					<li class="nav-item">
+    					<a class="nav-link active" aria-current="page" href="/">Home</a>
+  					</li>
+				  	<li class="nav-item">
+				    	<a class="btn btn-outline-light mybtn ripple-surface" type="button" href="/user/login.html" tabindex="-1" aria-disabled="true">Sign In</a>
+				  	</li>
+				</ul>
+				<a href="javascript:void(0)" class="icon" onclick="resNav()"><i class="fas fa-grip-lines"></i></a>
+			</div>
+		</nav>
+		<div class="banner container" id="Banner">
+			<div class="row">
+				<div class="col-sm-6">
+					<form class="form text-center">
+					<h2 class="text-white">Sign Up Form</h2>
+					<p class="mb-4">Fil this form properly to register with us.</p>
+						<div class="form-outline mb-4">
+    						<input type="text" id="form1Example1" class="form-control text-light" />
+    						<label class="form-label text-white" for="form1Example1">Full Name</label>
+  						</div>
+						<div class="form-outline mb-4">
+    						<input type="email" id="form1Example1" class="form-control text-light" />
+    						<label class="form-label text-white" for="form1Example1">Email address</label>
+  						</div>
+  						<div class="form-outline mb-4">
+    						<input type="number" id="form1Example1" min="18" max="100" class="form-control text-light" />
+    						<label class="form-label text-white" for="form1Example1">Age</label>
+  						</div>
+  						<!-- Password input -->
+  						<div class="form-outline mb-4">
+    						<input type="password" id="form1Example2" class="form-control text-light" />
+    						<label class="form-label text-white" for="form1Example2">Password</label>
+  						</div>
+  						<div class="form-outline mb-4">
+	  						<select class="form-select bg-transparent text-white" aria-label="Default select example">
+							  	<option class="text-dark" selected>Select Membership</option>
+							  	<option class="text-dark" value="1">Gold Member</option>
+							  	<option class="text-dark" value="2">Platinum Member</option>
+							  	<option class="text-dark" value="3">Diamond Member</option>
+							</select>
+						</div>
+						<a type="submit" href="/user/index.html" class="btn btn-light ripple">Sign up for free</a>
+					</form>
+				</div>
+				<div class="col-sm-6 text-center mt-5">
+					<img src="/assets/svg/2021.svg" alt="" width="80%">
+				</div>
+			</div>
+		</div>
+	</header>
+	<footer class="fixed-bottom pb-3 text-center text-white">
+				<a class="text-light" href="/">&copy; Copyright HomeAuto. All Rights reserved 2020. Designed by Nandpal Mohit.</a>
+
+	</footer>
+	<!-- vendor JS -->
+  	<script src="/assets/vendor/js/mdb.min.js"></script>
+  	<script type="text/javascript">
+  		// responsive collapse
+		function resNav() {
+			var x = document.getElementById("collapse-nav");
+			if (x.className === "nav justify-content-end") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav justify-content-end";
+			}
+		}
+  	</script>
+</body>
+</html>
